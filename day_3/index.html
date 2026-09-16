@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="this is my portfolio using html only in day 3 of the front-end development course">
+    <link rel="icon" href="assets/images/portfolio.png" type="image/x-icon">
+    <title>Portfolio</title>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>My Portfolio | <span>Ibrahim&nbsp;Mostafa&nbsp;Ibrahim</span></h1>
+        <nav aria-label="Main navigation">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- About Section -->
+        <section id="about">
+            <h2>About Me</h2>
+            <h1>Front-End Developer</h1>
+            <p>I am <span>Ibrahim Mostafa Ibrahim</span>, a passionate front-end developer who enjoys creating simple and user-friendly websites.</p>
+            <img src="assets/images/profile.png" alt="Ibrahim Mostafa Ibrahim portfolio image" width="150">
+        </section>
+        <hr>
+        <!-- Skills Section -->
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Next.js (react JS)</li>
+                <li>Bootstrap</li>
+                <li>Tailwind CSS</li>
+                <li>Git & GitHub</li>
+            </ul>
+            <h3>My Learning Journey</h3>
+            <ol>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Next.js (react JS)</li>
+            </ol>
+            <p>I am <strong>passionate</strong> about front-end development, <em>always learning</em>, and focused on <mark>building user-friendly websites</mark>.</p>
+        </section>
+        <hr>
+        <!-- Courses Section -->
+        <section id="courses">
+            <h2>My Courses</h2>
+            <table border="1">
+                <caption>My Courses</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Course Name</th>
+                        <th scope="col">Duration</th>
+                        <th scope="col">Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>HTML</td>
+                        <td>1 Week</td>
+                        <td>Completed</td>
+                    </tr>
+                    <tr>
+                        <td>CSS</td>
+                        <td>2 Weeks</td>
+                        <td>Completed</td>
+                    </tr>
+                    <tr>
+                        <td>JavaScript</td>
+                        <td>1 Month</td>
+                        <td>Completed</td>
+                    </tr>
+                    <tr>
+                        <td>ITI Frontend Development using React.js</td>
+                        <td>1 Month</td>
+                        <td>In Progress</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2">Total Courses</td>
+                        <td>4</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+        <hr>
+
+        <!-- Gallery Section -->
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <table>
+                <tr>
+                    <td>
+                        <figure>
+                            <img src="assets/images/gallery-1.png" alt="Front-end development workspace with a laptop" width="400">
+                            <figcaption>Day 3 | Activity 1</figcaption>
+                        </figure>
+                    </td>
+                    <td>
+                        <figure>
+                            <img src="assets/images/gallery-2.png" alt="Responsive website displayed on a computer screen" width="400">
+                            <figcaption>Day 2 | Task 2</figcaption>
+                        </figure>
+                    </td>
+                    <td>
+                        <figure>
+                            <img src="assets/images/gallery-3.png" alt="Code editor showing a web development project" width="400">
+                            <figcaption>Day 2 | Task 1</figcaption>
+                        </figure>
+                    </td>
+                </tr>
+            </table>
+        </section>
+        <hr>
+        
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact</h2>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Contact Information</legend>
+                <table>
+                    <tr>
+                        <td><label for="name">Name:</label></td>
+                        <td><input type="text" id="name" name="name" placeholder="Enter your name" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">Email:</label></td>
+                        <td><input type="email" id="email" name="email" placeholder="you@example.com" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="phone">Phone Number:</label></td>
+                        <td><input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required></td>  
+                    </tr>
+                    <tr>
+                        <td><label for="birthdate">Birth Date:</label></td>
+                        <td><input type="date" id="birthdate" name="birthdate"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="subject">Subject:</label></td>
+                        <td><select id="subject" name="subject" required>
+                            <option value="">Select a subject</option>
+                            <option value="project">Project inquiry</option>
+                            <option value="job">Job opportunity</option>
+                            <option value="feedback">Feedback</option>
+                        </select></td>
+                    </tr>
+                </table>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Preferred Contact Method:</legend>
+                    <input type="radio" id="contact-email" name="contact-method" value="email" required>
+                    <label for="contact-email">Email</label>
+                    <input type="radio" id="contact-phone" name="contact-method" value="phone">
+                    <label for="contact-phone">Phone</label>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Message</legend>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td><label for="message">Message:</label></td>
+                                <td><textarea id="message" name="message" rows="5" placeholder="Write your message" required></textarea></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </fieldset>
+                <br>
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms">I agree to the terms and conditions.</label>
+                <br><br>
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </form>
+        </section>
+
+        <hr>
+        <!-- FAQ Section -->
+        <section id="faq">
+            <h2>Frequently Asked Questions</h2>
+            <details>
+                <summary>What technologies do you use?</summary>
+                <p>I use HTML, CSS, JavaScript, React.js, Bootstrap, and Tailwind CSS.</p>
+            </details>
+            <details>
+                <summary>Are you available for freelance projects?</summary>
+                <p>Yes, I am open to discussing suitable freelance opportunities.</p>
+            </details>
+            <details>
+                <summary>How can I contact you?</summary>
+                <p>You can contact me by email using the details below.</p>
+            </details>
+        </section>
+        
+    </main>
+    <hr>
+    <!-- Footer Section -->
+    <footer>
+        <address>
+            Email: <a href="mailto:ibrahimmostafa11052007@gmail.com">ibrahimmostafa11052007@gmail.com</a><br>
+            Location: Egypt&nbsp;&nbsp;|&nbsp;&nbsp;Cairo
+        </address>
+        <p>&copy; 2025 Ibrahim Mostafa Ibrahim. All rights reserved.</p>
+        <nav aria-label="Social media links">
+            <a href="https://github.com/Ebrahimios" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://www.linkedin.com/in/ebrahimios/" target="_blank" rel="noopener">LinkedIn</a>        
+        </nav>
+    </footer>
+</body>
+</html>
