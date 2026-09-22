@@ -1,0 +1,80 @@
+:root {
+    --primary-color: teal;
+    --secondary-color: #f0f0f0;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    color: var(--primary-color);
+    text-align: center;
+
+}
+
+body {
+    background-color: var(--secondary-color);
+}
+
+.container {
+    width: 30%;
+    background-color: rgba(0, 128, 128, 0.2);
+    border: 3px solid var(--primary-color);
+    margin: 36px auto;
+    padding: 20px;
+    border-radius: 24px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.container img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+#name {
+    color: teal;
+    font-size: 2rem;
+    line-height: 30px;
+    font-family: "Fjalla One";
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 20px;
+    letter-spacing: 1px;
+}
+
+#jop-title {
+    font-size: 1.25rem;
+    width: 80%;
+    margin: 20px auto 0;
+    padding: 7px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    width: fit-content;
+    border-radius: 7px;
+    font-family: "roboto";
+}
+
+#description {
+    text-align: justify;
+    font-size: 1.25rem;
+    width: 80%;
+    margin: 20px auto 0;
+    font-family: "roboto";
+}
+
+#contact-btn {
+    font-size: 1.25rem;
+    font-family: "roboto";
+    background-color: var(--secondary-color);
+    margin: 20px auto 0;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#contact-btn:hover {
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    transition: all ease-in-out 300ms;
+}
