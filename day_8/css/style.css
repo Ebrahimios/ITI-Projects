@@ -1,0 +1,228 @@
+:root {
+    --primary-color: #8c7853;
+}
+
+@font-face {
+    font-family: Salom;
+    src: url("../assets/fonts/Salom-Regular.otf");
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto";
+}
+
+.hero-section {
+    background: url("../assets/images/background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 80vh;
+    width: 100%;
+    position: relative;
+
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header img {
+    width: 150px;
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    gap: 10px;
+}
+
+nav ul li {
+    padding: 10px 12px;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+    font-family: Salom;
+}
+
+#Current {
+    border-top: 2px solid var(--primary-color);
+    color: white;
+    cursor: default;
+}
+
+nav ul li:hover {
+    border-top: 2px solid var(--primary-color);
+    color: white;
+}
+
+.hero-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    padding: 48px;
+    width: 50%;
+    color: white;
+}
+
+.welcome, .description {
+    font-size: 1.5rem;
+    line-height: 45px;
+    font-weight: 300;
+}
+
+.title {
+    font-size: 4rem;
+    font-family: Salom;
+    letter-spacing: 1px;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.buttons-container button {
+    padding: 15px 20px;
+    border-radius: 5px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.learn-more {
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    border: none;
+}
+
+.contact {
+    background-color: transparent;
+    border: 1px solid white;
+}
+
+.mouse {
+	width: 30px;
+	height: 50px;
+	border: 3px solid white;
+	border-radius: 60px;
+    margin-top: 35px;
+	position: relative;
+	&::before {
+		content: '';
+		width: 12px;
+		height: 12px;
+		position: absolute;
+		top: 10px;
+		left: 50%;
+		transform: translateX(-50%);
+		background-color: white;
+		border-radius: 50%;
+		opacity: 1;
+		animation: wheel 2s infinite;
+		-webkit-animation: wheel 2s infinite;
+	}
+}
+
+@keyframes wheel {
+	to {
+		top: 30px;
+	}
+}
+
+@-webkit-keyframes wheel {
+	to {
+		top: 30px;
+	}
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+    padding: 48px;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.main img {
+    width: 50%;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 32px;
+    width: 50%;
+}
+
+.main-title {
+    font-family: Salom;
+
+}
+
+.main-description {
+    line-height: 30px;
+    font-weight: 300;
+}
+
+.main-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 10px;
+    width: 100%;
+}
+
+.main-list-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-weight: 300;
+}
+
+.main-list-item-image {
+    padding: 10px;
+    border-radius: 50%;
+    border: 1px solid var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-list-item-image img{
+    width: 24px;
+    height: 24px;
+    
+}
+
