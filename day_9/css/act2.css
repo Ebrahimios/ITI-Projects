@@ -1,0 +1,154 @@
+:root {
+    --primary-color: #0099cb;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 100vw;
+    overflow-x: hidden;
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "content aside gallery"
+    "comment comment comment"
+    "footer footer footer"
+    ;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 1fr 4fr 4fr 1fr;
+}
+
+header {
+    grid-area: header;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    text-align: center;
+}
+
+.title {
+    background-color: var(--primary-color);
+    padding: 10px;
+
+    color: white;
+}
+
+header ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    list-style: none;
+}
+
+.article-content {
+    grid-area: content;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 20px;
+    padding: 10px 0 10px 32px;
+}
+
+.content-item {
+    grid-area: content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 10px;
+}
+
+
+.aside {
+    grid-area: aside;
+    padding: 10px 32px 10px 0;
+}
+
+.aside-item {
+    background-color: #f0f0f0;
+    padding: 32px 10px 10px 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: start;
+    gap: 10px;
+}
+
+.gallery {
+    grid-area: gallery;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px;
+    padding: 0 10px 0 0;
+}
+
+.gallery h1 {
+    font-size: 1rem;
+}
+
+.gallery p {
+    font-size: 0.9rem;
+}
+
+.gallery img {
+    width: 100%;
+}
+
+.gallery-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+}
+
+.comment {
+    grid-area: comment;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+    margin: 0 0 32px 0;
+}
+
+.comment p {
+    margin-left: 20px;
+    width: 100%;
+}
+
+.comment input {
+    padding: 4px;
+    width: calc(100% - 96px);
+}
+
+button {
+    padding: 7px 20px;
+    color: white;
+    background-color: var(--primary-color);
+    border: none;
+}
+
+
+footer {
+    grid-area: footer;
+    display: flex;
+    justify-content: stretch;
+    align-items: start;
+}
+
+footer p {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+}
