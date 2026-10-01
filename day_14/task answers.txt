@@ -1,0 +1,138 @@
+# Part 1 - Choose
+
+### 1) إيه اللي بيرجعه `map()` ؟
+
+- [ ] أول عنصر يحقق شرط
+- [ . ] Array جديدة بنفس الطول
+- [ ] Boolean
+- [ ] Number
+
+---
+
+### 2) مين فيهم بيرجع أول عنصر يحقق الشرط؟
+
+- [ ] filter()
+- [ ] map()
+- [ . ] find()
+- [ ] forEach()
+
+---
+
+### 3) `filter()` بيرجع...
+
+- [ ] أول عنصر
+- [ . ] Array جديدة بالعناصر اللي حققت الشرط
+- [ ] Number
+- [ ] String
+
+---
+
+### 4) `forEach()` بيرجع...
+
+- [ ] Array جديدة
+- [ ] أول عنصر
+- [ . ] undefined
+- [ ] Boolean
+
+---
+
+### 5) `for...of` بنستخدمها غالباً مع...
+
+- [ ] Objects
+- [ . ] Arrays
+- [ ] Functions
+- [ ] Classes
+
+---
+
+# Part 2 - True or False
+
+1. `map()` بيغير الـ Array الأصلية.
+false
+
+2. `filter()` ممكن يرجع Array فاضية.
+true
+
+3. `find()` ممكن يرجع undefined.
+true
+
+4. `for...in` بيلف على الـ Index بتاع الـ Array.
+true
+
+5. `forEach()` ينفع أعمل بيها break.
+true
+
+---
+
+# Part 3 - Compelete the following
+
+## Q1
+
+خلي الكود يطبع:
+
+```
+2
+4
+6
+8
+```
+
+```js
+const numbers = [1,2,3,4];
+
+numbers.____map____((num)=>{
+    console.log(num * 2);
+});
+```
+
+---
+
+## Q2
+
+طلع Array فيها الأرقام الأكبر من 20.
+
+```js
+const nums = [10,25,5,30,15,40];
+
+const result = nums.____filter____((num)=>{
+    return num > 20;
+});
+
+console.log(result);
+```
+
+---
+
+## Q3
+
+هات أول شخص عمره أكبر من 25.
+
+```js
+const users = [
+    {name:"Ali", age:20},
+    {name:"Sara", age:28},
+    {name:"Omar", age:30}
+];
+
+const user = users.____find____((item)=>{
+    return item.age > 25;
+});
+
+console.log(user);
+```
+
+---
+
+## Q4
+
+حوّل كل الأسماء لـ Uppercase.
+
+```js
+const names = ["ali","mona","ahmed"];
+
+const result = names.____map____((name)=>{
+    return name.toUpperCase();
+});
+
+console.log(result);
+```
